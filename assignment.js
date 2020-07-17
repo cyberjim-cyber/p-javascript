@@ -1,7 +1,7 @@
-// ---feet to mile---//
+    // ---feet to mile---//
 
 
-function feetToMile(feet){
+    function feetToMile(feet){
 
     var Mile=feet/5280;
     return Mile;
@@ -37,18 +37,18 @@ function tinyFriend(name){
             smallestName=element;
         }
     }
-return smallestName;
-}
+    return smallestName;
+    }
 
-var largestResult=tinyFriend(["mim","sabiha","simu","sm"]);
-console.log(largestResult);
-
-
-// --end tiny friend---//
+    var largestResult=tinyFriend(["mim","sabiha","simu","sm"]);
+    console.log(largestResult);
 
 
+    // --end tiny friend---//
 
-// -----wood calculator----//
+
+
+    // -----wood calculator----//
 
 
 
@@ -65,7 +65,7 @@ console.log(largestResult);
 
 
     
-function woodCalculator(chair,table,bed){
+    function woodCalculator(chair,table,bed){
     var chairWood=chair*1;
     var tableWood=table*3;
     var bedWood=bed*5;
@@ -84,32 +84,39 @@ function woodCalculator(chair,table,bed){
 
 
 
-
+// ---start brick calculator ---//
 
     function brickCalculator(floor){
 
-    var tenFloorFeet =floor*15;
+    var tenFloorBrick =1000*(floor*15);
+   
 
     var twentyFloorfeet=(floor-10)*12+150;
+    var twentyFloorBrick=1000*twentyFloorfeet;
     var thirtyFloorFeet=(floor-20)*10+120+150;
+
+    var thirtyFloorBrick=1000*thirtyFloorFeet;
 
     if(floor<=10){
 
 
-        console.log(tenFloorFeet);
+        console.log(tenFloorBrick);
     }
     else if(floor<=20){
 
-        console.log(twentyFloorfeet);
+        console.log(twentyFloorBrick);
     }
 
     else if(floor<=30){
 
-    console.log(thirtyFloorFeet);
+    console.log(thirtyFloorBrick);
 
     }
     }
 
-    var resultOfFeet=brickCalculator(22)*1000;
+    var resultOfFeet=brickCalculator(21);
   
     console.log(resultOfFeet);
+
+
+    // ------end brick calculator ---//
